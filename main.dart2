@@ -1,0 +1,21 @@
+void main() {
+	final customer = Customer("Khalid");
+	customer.add(54.5);
+	customer.add(12.2);
+	print(customer.getPurchaseAmount());
+}
+
+class Customer{
+    String name;
+    double purchaseAmount = 0;
+
+    Customer(this.name);
+
+    void add(double price){
+        purchaseAmount += price;
+    }
+
+    double getPurchaseAmount() {
+        return purchaseAmount;
+    }
+}
